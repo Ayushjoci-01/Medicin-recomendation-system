@@ -97,6 +97,10 @@ def get_predicted_value(patient_symptoms):
 st.title("Disease Prediction System")
 
 symptoms_input = st.text_input("Enter your symptoms separated by commas (e.g., headache, nausea, vomiting)")
+st.markdown("""
+    **Note:** The information provided is for general informational purposes only. 
+    It is not a substitute for professional medical advice. Please consult a doctor for accurate diagnosis and treatment.
+""")
 
 if st.button("Predict Disease"):
     if symptoms_input.strip() == "":
