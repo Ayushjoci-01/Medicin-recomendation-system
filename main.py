@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+import sklearn
 
 # Load datasets
 sym_des = pd.read_csv("symtoms_df.csv")
