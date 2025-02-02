@@ -12,7 +12,8 @@ medications = pd.read_csv('medications.csv')
 diets = pd.read_csv("diets.csv")
 
 # Load model
-svc = pickle.load(open('svc.pkl', 'rb'))
+
+svc = pickle.load(open('svc.pkl','rb'))
 
 # Helper function
 def helper(dis):
